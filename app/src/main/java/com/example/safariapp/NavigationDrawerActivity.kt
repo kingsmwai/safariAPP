@@ -38,6 +38,13 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         //sync state
         toggle.syncState()
 
+
+        //check if fragment is null
+        if(savedInstanceState == null){
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,FragmentA()).commit() // this line attaches a fragment to the view
+            navView.setCheckedItem(R.id.frag_a)
+        }
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -67,6 +74,19 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 startActivity(intentBottom)
             }
 
+            //fragment switching
+            R.id.frag_a -> {
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,FragmentA()).commit()
+            }
+            R.id.frag_b -> {
+                supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,FragmentB()).commit()
+            }
+
+            //lifecycle activity
+            R.id.nav_lifecycle -> {
+                val intentLife = Intent(this@NavigationDrawerActivity,LifeCycleActivity::class.java)
+                startActivity(intentLife)
+            }
         }
         return true
     }

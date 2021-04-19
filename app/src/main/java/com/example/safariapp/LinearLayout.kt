@@ -3,6 +3,7 @@ package com.example.safariapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -11,7 +12,7 @@ import android.widget.Toast
 class LinearLayout : AppCompatActivity() {
     //intializing ur widget
     lateinit var textName: TextView
-    lateinit var btnRelative: Button
+    lateinit var btnRelative: TextView
     lateinit var btnConstraint: Button
     lateinit var btnToast: Button
 
@@ -35,6 +36,7 @@ class LinearLayout : AppCompatActivity() {
         btnRelative.setOnClickListener(View.OnClickListener {
             val intentRelative  = Intent(this,RelativeLayout::class.java)
             startActivity(intentRelative)
+            Log.d("check","button click not working" + intentRelative)
         })
 
         btnConstraint.setOnClickListener(View.OnClickListener {

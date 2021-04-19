@@ -28,6 +28,24 @@
   </item>
 
 
+    <item android:title="@string/fragments">
+          <menu>
+              <item
+                  android:id="@+id/frag_a"
+                  android:title="Fragment A"
+                  android:icon="@drawable/applogo"
+                  />
+              <item
+                  android:id="@+id/frag_b"
+                  android:title="Fragment B"
+                  android:icon="@drawable/applogo"
+                  />
+
+          </menu>
+
+    </item>
+
+
     <item
         android:id="@+id/nav_bottom"
         android:title="Bottom Navigation"
@@ -38,6 +56,14 @@
     <item
         android:id="@+id/nav_random"
         android:title="Random Link"
+        android:icon="@drawable/applogo"
+        android:iconTint="#3F51B5"
+        />
+
+
+    <item
+        android:id="@+id/nav_lifecycle"
+        android:title="LifeCycle"
         android:icon="@drawable/applogo"
         android:iconTint="#3F51B5"
         />
