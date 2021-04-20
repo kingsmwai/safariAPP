@@ -68,4 +68,11 @@
         android:iconTint="#3F51B5"
         />
 
+    <item
+        android:id="@+id/nav_intent_sharing"
+        android:title="Intent Sharing"
+        android:icon="@drawable/applogo"
+        android:iconTint="#3F51B5"
+        />
+
 </menu>

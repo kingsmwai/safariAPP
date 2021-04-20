@@ -87,6 +87,12 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentLife = Intent(this@NavigationDrawerActivity,LifeCycleActivity::class.java)
                 startActivity(intentLife)
             }
+
+            //intent sharing
+            R.id.nav_intent_sharing -> {
+                val intentSharingNav = Intent(this@NavigationDrawerActivity, IntentSharingA::class.java)
+                startActivity(intentSharingNav)
+            }
         }
         return true
     }
