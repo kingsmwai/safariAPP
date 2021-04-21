@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SafariApp">
-        <activity android:name=".IntentSharingB"></activity>
+        <activity android:name=".CustomListView"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".FragmentSharing" />
+        <activity android:name=".IntentSharingB" />
         <activity android:name=".IntentSharingA" />
         <activity android:name=".LifeCycleActivity" />
         <activity android:name=".BottomNavigation" />
