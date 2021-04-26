@@ -104,6 +104,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentLists = Intent(this@NavigationDrawerActivity, ListViewActivity::class.java)
                 startActivity(intentLists)
             }
+            R.id.nav_recycler -> {
+                val intentLists = Intent(this@NavigationDrawerActivity, RecyclerViewActivity::class.java)
+                startActivity(intentLists)
+            }
         }
         return true
     }
