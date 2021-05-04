@@ -77,7 +77,15 @@
 
     <item
         android:id="@+id/nav_fragment_sharing"
-        android:title="Fragment Sharing"
+        android:title="Fragment Interface"
+        android:icon="@drawable/applogo"
+        android:iconTint="#3F51B5"
+        />
+
+
+    <item
+        android:id="@+id/nav_fragment_viewmodel"
+        android:title="Fragment ViewModel"
         android:icon="@drawable/applogo"
         android:iconTint="#3F51B5"
         />

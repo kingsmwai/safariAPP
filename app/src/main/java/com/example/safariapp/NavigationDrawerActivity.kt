@@ -94,7 +94,13 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 startActivity(intentSharingNav)
             }
 
-            //fragment sharing
+            //fragment sharian via a ViewModel
+            R.id.nav_fragment_viewmodel -> {
+                val intentSharingNav = Intent(this@NavigationDrawerActivity, FragmentSharingViewModel::class.java)
+                startActivity(intentSharingNav)
+            }
+
+            //fragment sharing via interface
             R.id.nav_fragment_sharing -> {
                 val intentSharingNav = Intent(this@NavigationDrawerActivity, FragmentSharing::class.java)
                 startActivity(intentSharingNav)
