@@ -114,6 +114,18 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentLists = Intent(this@NavigationDrawerActivity, RecyclerViewActivity::class.java)
                 startActivity(intentLists)
             }
+            R.id.nav_con2 -> {
+                val intentCon2 = Intent(this@NavigationDrawerActivity, ConstraintLayout2::class.java)
+                startActivity(intentCon2)
+            }
+            R.id.nav_background -> {
+                val intentBack = Intent(this@NavigationDrawerActivity, BackgroundLogic::class.java)
+                startActivity(intentBack)
+            }
+            R.id.nav_sqlite -> {
+                val intentBack = Intent(this@NavigationDrawerActivity, SQLiteDataActivity::class.java)
+                startActivity(intentBack)
+            }
         }
         return true
     }

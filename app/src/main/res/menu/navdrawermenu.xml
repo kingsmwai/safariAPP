@@ -24,6 +24,14 @@
               android:iconTint="#3F51B5"
               />
 
+
+          <item
+              android:id="@+id/nav_con2"
+              android:title="Constrait Layout Two"
+              android:icon="@drawable/constrait"
+              android:iconTint="#3F51B5"
+              />
+
       </menu>
   </item>
 
@@ -100,6 +108,20 @@
     <item
         android:id="@+id/nav_recycler"
         android:title="Recycler View"
+        android:icon="@drawable/applogo"
+        android:iconTint="#3F51B5"
+        />
+
+    <item
+        android:id="@+id/nav_background"
+        android:title="Background Logic"
+        android:icon="@drawable/applogo"
+        android:iconTint="#3F51B5"
+        />
+
+    <item
+        android:id="@+id/nav_sqlite"
+        android:title="SQLite"
         android:icon="@drawable/applogo"
         android:iconTint="#3F51B5"
         />
