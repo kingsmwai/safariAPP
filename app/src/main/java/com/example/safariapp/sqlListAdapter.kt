@@ -21,8 +21,8 @@ class sqlListAdapter(private val context: Activity, private val id: Array<String
 
         //view identification and also set data according to position
         textId.text = "ID: ${id[position]}"
-        textName.text = "ID: ${name[position]}"
-        textEmail.text = "ID: ${email[position]}"
+        textName.text = "Name: ${name[position]}"
+        textEmail.text = "Email: ${email[position]}"
 
 
         return rowView

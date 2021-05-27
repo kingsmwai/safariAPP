@@ -83,4 +83,39 @@ class DatabaseHandler(context: Context) : SQLiteOpenHelper(context,DATABASE_NAME
 
         return userArray
     }
+
+    //update method
+    fun updateData(sqlListModel: sqlListModel) : Int{
+        //process in db
+        val db  = this.writableDatabase
+        //content values
+        val contentValues = ContentValues()
+        //put the details inside the respective colums
+        contentValues.put(KEY_ID, sqlListModel.userId)
+        contentValues.put(KEY_NAME, sqlListModel.userName)
+        contentValues.put(KEY_EMAIL, sqlListModel.userEmail)
+        //updating the row
+        val success = db.update(TABLE_USERS,contentValues,"id=" + sqlListModel.userId,null)
+        //close the connection
+        db.close()
+
+        return success
+
+    }
+
+    //delete method
+    fun deleteData(sqlListModel: sqlListModel) : Int{
+        //process
+        val db = this.writableDatabase
+        //contentvalues
+        val contentValues = ContentValues()
+        contentValues.put(KEY_ID, sqlListModel.userId)
+        //delete process
+        val success = db.delete(TABLE_USERS,"id=" + sqlListModel.userId,null)
+        db.close()
+        return success
+
+    }
+
+
 }
