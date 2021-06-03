@@ -126,6 +126,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentBack = Intent(this@NavigationDrawerActivity, SQLiteDataActivity::class.java)
                 startActivity(intentBack)
             }
+            R.id.nav_shareds -> {
+                val intentBack = Intent(this@NavigationDrawerActivity, SharedPreferencesActivity::class.java)
+                startActivity(intentBack)
+            }
         }
         return true
     }

@@ -27,4 +27,4 @@ class sqlListAdapter(private val context: Activity, private val id: Array<String
 
         return rowView
     }
-}
+}   
