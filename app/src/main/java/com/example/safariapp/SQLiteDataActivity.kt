@@ -112,11 +112,7 @@ class SQLiteDataActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(applicationContext,"Id field must not be empty",Toast.LENGTH_LONG).show()
             }
-
-
-
-
-
+            
         })
 
 

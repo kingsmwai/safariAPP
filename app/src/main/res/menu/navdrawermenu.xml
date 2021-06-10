@@ -131,4 +131,15 @@
         android:icon="@drawable/applogo"
         android:iconTint="#3F51B5"
         />
+
+    <item android:title="Android Networking">
+        <menu>
+            <item
+                android:title="Covid Volley"
+                android:id="@+id/nav_volley"
+                android:icon="@drawable/applogo"
+                />
+        </menu>
+
+    </item>
 </menu>

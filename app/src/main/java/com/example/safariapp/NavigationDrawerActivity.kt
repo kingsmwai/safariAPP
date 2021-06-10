@@ -130,6 +130,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
                 val intentBack = Intent(this@NavigationDrawerActivity, SharedPreferencesActivity::class.java)
                 startActivity(intentBack)
             }
+            R.id.nav_volley -> {
+                val intentVolley = Intent(this@NavigationDrawerActivity, CovidVolley::class.java)
+                startActivity(intentVolley)
+            }
         }
         return true
     }
